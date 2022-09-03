@@ -1,0 +1,109 @@
+.header{
+  display:flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.header .profilephoto{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.header .title{
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.header .titleName{
+  font-family: 'Arvo', serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.infos{
+  display: block;
+  position:relative;
+}
+
+.infos h1{
+  position: relative;
+}
+
+.infos h1::after{
+  display:block;
+  position: absolute;
+  width: 2px;
+  height: 165px;
+  content: '';
+  background-color: antiquewhite;
+  margin-top:-23px;
+  margin-left: -15px;
+}
+
+.infos p{
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.infos p a{
+  color: #FFF;
+  text-decoration: none;
+}
+
+.infos a:hover{
+  color:rgb(157, 219, 255)
+}
+
+.infos .infoStudent::before{
+  content: '';
+  display:inline-block;
+  background-image: url("../img/icons/graduation-hat-svgrepo-com.svg");
+  width: 1.2rem;
+  height: 1.2rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0.5rem;
+}
+.infos .infoMap::before{
+  content: '';
+  display:inline-block;
+  background-image: url("../img/icons/map-svgrepo-com.svg");
+  width: 1.2rem;
+  height: 1.2rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0.5rem;
+}
+.infos .infoLinkedin::before{
+  content: '';
+  display:inline-block;
+  background-image: url("../img/icons/linkedin-svgrepo-com.svg");
+  width: 1.2rem;
+  height: 1.2rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0.5rem;
+}
+.infos .infoEmail::before{
+  content: '';
+  display:inline-block;
+  background-image: url("../img/icons/email-svgrepo-com.svg");
+  width: 1.2rem;
+  height: 1.2rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0.5rem;
+}
+
+
+@media screen and (min-width: 740px) {
+
+  .header{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 3rem;
+  }
+}
