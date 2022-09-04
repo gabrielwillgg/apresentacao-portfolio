@@ -7,6 +7,17 @@ h1, h2, h3{
     margin: 0;
 }
 
+a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
 body{
   background-image: url("../img/background.jpg");
   color: #FFF;
@@ -53,4 +64,116 @@ body{
     background-size: contain;
     background-image: url(../img/icons/check.svg);
     margin-right: 0.5rem;
+}
+
+
+.achievementsDio h3{
+    text-align: center;
+}
+
+.achievementsDio img{
+    width: 100px;
+    object-fit: contain;
+}
+
+.achievementsDio ul{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    padding:0;
+}
+
+.educationList{
+    padding-left: 1rem;
+    line-height: 1.25rem;
+}
+
+.educationList h4{
+    padding: 0;
+    margin: 1rem 1rem;
+    position:relative;
+}
+.educationList ul{
+    list-style: none;
+    margin:0;
+    padding-left:1rem;
+}
+
+.educationList li{
+    font-size: 0.875rem;
+}
+
+.dioTitle::before{
+    content: '';
+    position:absolute;
+    display:inline-block;
+    background-image: url("../img/diome.png");
+    width: 1.2rem;
+    height: 1.2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: -1.5rem;
+    margin-top: .375rem;
+}
+.anhangueraTitle::before{
+    content: '';
+    position:absolute;
+    display:inline-block;
+    background-image: url("../img/anhanguera.png");
+    width: 1.2rem;
+    height: 1.2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: -1.5rem;
+}
+.cruzeiroTitle::before{
+    content: '';
+    position:absolute;
+    display:inline-block;
+    background-image: url("../img/cruzeirodosul.png");
+    width: 1.2rem;
+    height: 1.2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: -1.5rem;
+}
+
+.portfolio{
+    padding-left: 1rem;
+}
+
+.github{
+    margin: 1rem 1rem;
+    position:relative;
+}
+
+.github::before{
+    content: '';
+    position:absolute;
+    display:inline-block;
+    background-image: url("../img/icons/github.svg");
+    width: 1.2rem;
+    height: 1.2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: -1.5rem;
+}
+
+.jobs{
+    margin: 1rem 1rem;
+    position:relative;
+}
+
+.jobs::before{
+    content: '';
+    position:absolute;
+    display:inline-block;
+    background-image: url("../img/icons/jobs.svg");
+    width: 1.2rem;
+    height: 1.2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: -1.5rem;
 }
